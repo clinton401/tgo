@@ -52,8 +52,19 @@ export default function RegisterPage() {
       const result = await sendApplicationEmail(formData)
 
       if (result.success) {
-        // Show success modal instead of redirecting
+        // Show success modal
         setShowSuccessModal(true)
+        // Reset form data
+        setFormData({
+          name: "",
+          gender: "male",
+          country: "",
+          address: "",
+          email: "",
+          grantAmount: "100000",
+          phone: "",
+          projectDescription: "",
+        })
       } else {
         toast({
           title: "Submission Failed",
@@ -83,32 +94,32 @@ export default function RegisterPage() {
               Grant Application
             </h1>
             <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Complete the form below to apply for a TGO grant. All fields are required.
+              Complete the form below to apply for an SBA grant. All fields are required.
             </p>
           </div>
           <div className="mx-auto mt-8 max-w-3xl">
             <Card>
               <CardHeader>
-                <CardTitle>Personal Information</CardTitle>
-                <CardDescription>Please provide your personal details for the application.</CardDescription>
+                <CardTitle>Business Information</CardTitle>
+                <CardDescription>Please provide your business details for the application.</CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-4">
                     <div className="space-y-2">
-                      <Label htmlFor="name">Name</Label>
+                      <Label htmlFor="name">Business Name</Label>
                       <Input
                         id="name"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="Enter your full name"
+                        placeholder="Enter your business name"
                         required
                       />
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="gender">Gender</Label>
+                      <Label htmlFor="gender">Business Type</Label>
                       <RadioGroup
                         value={formData.gender}
                         onValueChange={(value) => handleSelectChange("gender", value)}
@@ -116,15 +127,15 @@ export default function RegisterPage() {
                       >
                         <div className="flex items-center space-x-2">
                           <RadioGroupItem value="male" id="male" />
-                          <Label htmlFor="male">Male</Label>
+                          <Label htmlFor="male">Startup</Label>
                         </div>
                         <div className="flex items-center space-x-2">
                           <RadioGroupItem value="female" id="female" />
-                          <Label htmlFor="female">Female</Label>
+                          <Label htmlFor="female">Established Business</Label>
                         </div>
                         <div className="flex items-center space-x-2">
                           <RadioGroupItem value="other" id="other" />
-                          <Label htmlFor="other">Other</Label>
+                          <Label htmlFor="other">Nonprofit</Label>
                         </div>
                       </RadioGroup>
                     </div>
@@ -156,26 +167,26 @@ export default function RegisterPage() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="address">Address</Label>
+                      <Label htmlFor="address">Business Address</Label>
                       <Textarea
                         id="address"
                         name="address"
                         value={formData.address}
                         onChange={handleChange}
-                        placeholder="Enter your full address"
+                        placeholder="Enter your business address"
                         required
                       />
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
+                      <Label htmlFor="email">Business Email</Label>
                       <Input
                         id="email"
                         name="email"
                         type="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="Enter your email address"
+                        placeholder="Enter your business email address"
                         required
                       />
                     </div>
@@ -200,14 +211,14 @@ export default function RegisterPage() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number</Label>
+                      <Label htmlFor="phone">Business Phone Number</Label>
                       <Input
                         id="phone"
                         name="phone"
                         type="tel"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="Enter your phone number"
+                        placeholder="Enter your business phone number"
                         required
                       />
                     </div>
@@ -219,7 +230,7 @@ export default function RegisterPage() {
                         name="projectDescription"
                         value={formData.projectDescription}
                         onChange={handleChange}
-                        placeholder="Describe your project or initiative"
+                        placeholder="Describe your business project or initiative"
                         className="min-h-[150px]"
                         required
                       />
@@ -264,7 +275,7 @@ export default function RegisterPage() {
             </div>
             <h2 className="mt-6 text-center text-2xl font-bold text-purple-600">Application Submitted Successfully!</h2>
             <p className="mt-2 text-center text-gray-500">
-              Thank you for applying for a TGO grant. We have received your application and will review it shortly. You
+              Thank you for applying for an SBA grant. We have received your application and will review it shortly. You
               will receive a confirmation email with further details.
             </p>
             <div className="mt-6 flex justify-center">

@@ -36,11 +36,11 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="space-y-4">
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                  Empowering Through Financial Support
+                  Empowering Small Businesses
                 </h1>
                 <p className="max-w-[600px] text-gray-100 md:text-xl">
-                  TGO provides substantial grants to individuals and organizations committed to making a positive impact
-                  in their communities.
+                  SBA provides substantial grants to small businesses and entrepreneurs committed to innovation and
+                  growth.
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link href="/register" passHref>
@@ -82,26 +82,26 @@ export default function Home() {
             <div className="mx-auto max-w-3xl space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter text-purple-600 sm:text-4xl md:text-5xl">About Us</h2>
               <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                TGO was established to provide substantial financial support to individuals and organizations with
-                innovative ideas and impactful projects.
+                SBA was established on July 30, 1953 to provide substantial financial support to small businesses and
+                entrepreneurs with innovative ideas and growth potential.
               </p>
             </div>
             <div className="mx-auto mt-12 max-w-5xl space-y-6">
               <p className="text-gray-600">
-                Founded in 2010, TGO has been at the forefront of providing financial assistance to deserving
-                individuals and organizations. Our mission is to identify and support projects that have the potential
-                to create lasting positive change in communities around the world.
+                Founded on July 30, 1953, SBA has been at the forefront of providing financial assistance to deserving
+                small businesses and entrepreneurs for over 70 years. Our mission is to identify and support projects
+                that have the potential to create jobs, drive innovation, and strengthen the economy.
               </p>
               <p className="text-gray-600">
-                We believe that financial constraints should not hinder great ideas. That's why we offer grants starting
-                from $100,000 to help turn these ideas into reality. Our team of experienced professionals carefully
-                evaluates each application to ensure that the funds are allocated to projects with the highest potential
-                for impact.
+                We believe that financial constraints should not hinder great business ideas. That's why we offer grants
+                starting from $100,000 to help turn these ideas into reality. Our team of experienced professionals
+                carefully evaluates each application to ensure that the funds are allocated to businesses with the
+                highest potential for success and impact.
               </p>
               <p className="text-gray-600">
-                Over the years, we have supported hundreds of projects across various sectors, including education,
-                healthcare, technology, and environmental conservation. Our grantees have gone on to make significant
-                contributions to their fields and communities.
+                Over the years, we have supported hundreds of small businesses across various sectors, including
+                technology, manufacturing, healthcare, and sustainable energy. Our grantees have gone on to create
+                thousands of jobs and make significant contributions to their industries and communities.
               </p>
             </div>
           </div>
@@ -119,12 +119,85 @@ export default function Home() {
                 Who Can Apply?
               </h2>
               <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Our grant program is open to individuals and organizations who meet the following criteria:
+                Our grant program is open to small businesses and entrepreneurs who meet the following criteria:
               </p>
             </div>
             <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2">
               <div className="space-y-4 rounded-lg border bg-white p-6 shadow-sm">
-                <h3 className="text-xl font-bold text-purple-600">Individuals</h3>
+                <h3 className="text-xl font-bold text-purple-600">Small Businesses</h3>
+                <ul className="space-y-2 text-gray-500">
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-5 w-5 text-purple-600"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Legally registered business entity</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-5 w-5 text-purple-600"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>In operation for at least 1 year</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-5 w-5 text-purple-600"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Fewer than 500 employees</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-5 w-5 text-purple-600"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Seeking funding of at least $100,000</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="space-y-4 rounded-lg border bg-white p-6 shadow-sm">
+                <h3 className="text-xl font-bold text-purple-600">Entrepreneurs</h3>
                 <ul className="space-y-2 text-gray-500">
                   <li className="flex items-center gap-2">
                     <svg
@@ -158,7 +231,7 @@ export default function Home() {
                     >
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    <span>Have a well-defined project or initiative</span>
+                    <span>Have a well-defined business plan</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <svg
@@ -175,80 +248,7 @@ export default function Home() {
                     >
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    <span>Demonstrate potential for significant impact</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-purple-600"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Seeking funding of at least $100,000</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="space-y-4 rounded-lg border bg-white p-6 shadow-sm">
-                <h3 className="text-xl font-bold text-purple-600">Organizations</h3>
-                <ul className="space-y-2 text-gray-500">
-                  <li className="flex items-center gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-purple-600"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Legally registered entity</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-purple-600"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Operational for at least 2 years</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5 text-purple-600"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Proven track record of community impact</span>
+                    <span>Demonstrate market potential and innovation</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <svg
@@ -288,7 +288,7 @@ export default function Home() {
                 Success Stories
               </h2>
               <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                See how our grants have made a difference.
+                See how our grants have helped small businesses thrive.
               </p>
             </div>
             <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
@@ -297,14 +297,14 @@ export default function Home() {
                   <div className="mb-4 h-40 overflow-hidden rounded-lg bg-gray-100">
                     <img
                       src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1770&auto=format&fit=crop"
-                      alt="Education Initiative"
+                      alt="Tech Startup"
                       className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-purple-600">Education Initiative</h3>
+                  <h3 className="mb-2 text-xl font-bold text-purple-600">Tech Startup</h3>
                   <p className="text-gray-500">
-                    "With TGO's support, we built 5 schools in underserved communities, providing education to over
-                    2,000 children annually."
+                    "With SBA's support, we developed our AI platform and secured Series A funding within a year,
+                    growing our team from 5 to 30 employees."
                   </p>
                 </CardContent>
               </Card>
@@ -313,14 +313,14 @@ export default function Home() {
                   <div className="mb-4 h-40 overflow-hidden rounded-lg bg-gray-100">
                     <img
                       src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?q=80&w=1770&auto=format&fit=crop"
-                      alt="Healthcare Project"
+                      alt="Healthcare Innovation"
                       className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-purple-600">Healthcare Project</h3>
+                  <h3 className="mb-2 text-xl font-bold text-purple-600">Healthcare Innovation</h3>
                   <p className="text-gray-500">
-                    "The $250,000 grant from TGO helped us establish a mobile clinic that now serves 15,000 patients in
-                    rural areas."
+                    "The $250,000 grant from SBA helped us bring our medical device to market, which is now used in over
+                    100 hospitals nationwide."
                   </p>
                 </CardContent>
               </Card>
@@ -329,14 +329,14 @@ export default function Home() {
                   <div className="mb-4 h-40 overflow-hidden rounded-lg bg-gray-100">
                     <img
                       src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1770&auto=format&fit=crop"
-                      alt="Tech Innovation"
+                      alt="Green Manufacturing"
                       className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                     />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-purple-600">Tech Innovation</h3>
+                  <h3 className="mb-2 text-xl font-bold text-purple-600">Green Manufacturing</h3>
                   <p className="text-gray-500">
-                    "TGO's funding was crucial in developing our water purification technology, now deployed in 3
-                    countries."
+                    "SBA's funding was crucial in scaling our sustainable packaging solution, now used by major
+                    retailers across the country."
                   </p>
                 </CardContent>
               </Card>
@@ -350,7 +350,7 @@ export default function Home() {
             <div className="mx-auto max-w-3xl space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Ready to Apply?</h2>
               <p className="text-purple-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Take the first step towards bringing your vision to life with substantial funding.
+                Take the first step towards growing your business with substantial funding.
               </p>
               <div className="mx-auto flex max-w-sm flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/register" passHref className="w-full">

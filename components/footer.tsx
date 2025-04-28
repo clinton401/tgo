@@ -6,9 +6,9 @@ export function Footer() {
       <div className="container px-4 py-8 md:px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div className="space-y-4">
-            <h3 className="text-lg font-medium text-purple-600">TGO</h3>
+            <h3 className="text-lg font-medium text-purple-600">SBA Grants</h3>
             <p className="text-sm text-gray-500">
-              Providing financial support to individuals and organizations since 2010.
+              Providing substantial financial support to small businesses and entrepreneurs since July 30, 1953.
             </p>
           </div>
           <div className="space-y-4">
@@ -33,7 +33,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} TGO. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} SBA Grants. All rights reserved. Established July 30, 1953</p>
         </div>
       </div>
     </footer>

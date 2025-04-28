@@ -6,7 +6,7 @@ export function Navigation() {
     <header className="border-b">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-purple-600">TGO</span>
+          <span className="text-2xl font-bold text-purple-600">SBA Grants</span>
         </Link>
         <nav className="hidden gap-6 md:flex">
           <Link
