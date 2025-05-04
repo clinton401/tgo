@@ -159,7 +159,6 @@ export default function RegisterPage() {
                           <SelectItem value="fr">France</SelectItem>
                           <SelectItem value="jp">Japan</SelectItem>
                           <SelectItem value="in">India</SelectItem>
-                          <SelectItem value="ng">Nigeria</SelectItem>
                           <SelectItem value="za">South Africa</SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
